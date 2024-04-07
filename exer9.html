@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Spice&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h2>
+      Cubing a Number
+        <form>
+            <label for="value">Enter a number:</label>
+            <input type="number" id="value">
+            <button type="button" onclick="cube()">Submit</button>
+        </form>
+    
+        <h1 id="result"></h1>
+    
+        <script>
+        function cube() {
+            let num1 = document.getElementById("value").value;
+            let cube = num1 * num1 * num1;
+            document.getElementById("result").innerHTML = cube;
+        }
+        </script>
+    </h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #4</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Spice&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h2>
+        Letter Checker
+    <form id="LetterForm">
+        <label for="lett">Letter:</label>
+        <input type="text" id="lett" name="lett">
+        <button type="button" onclick="displayMess()">Submit</button>
+    </form>
+
+    <h1 id="displayMessage"></h1>
+
+<script>
+function displayMess() {
+    var lett = document.getElementById("lett").value; 
+    let message; 
+
+    if (lett === 'a' || lett === 'e' || lett === 'i' || lett === 'o' || lett === 'u') {
+        message = "Vowel";
+    } else if (lett === 'A' || lett === 'E' || lett === 'I' || lett === 'O' || lett === 'U') {
+        message = "Vowel";
+    } else {
+        message = "Consonant"; 
+    }
+
+    document.getElementById("displayMessage").innerHTML = "The letter is " + message + "!";
+}
+</script>
+</h2>
+</div>
+</body>
+</html>

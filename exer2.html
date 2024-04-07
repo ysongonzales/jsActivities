@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+ <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title> Exercise #2 </title> 
+           <link rel="stylesheet" href="style.css">
+           
+           <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Spice&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+        </head> 
+<body>
+    <div class="container">
+        <h2> Input Form
+           <h2>Enter Your Name</h2> 
+        <form id="nameForm">
+            <label for="name">Name:</label> 
+            <input type= "text" id="name" name="name"> 
+            <button type="button" onclick="displayName()">Submit</button>
+        </form> <h1 id="displayName"></h1>
+    <h2>        
+    <script> function displayName() { var userName = document.getElementById("name").value; document.getElementById("displayName").innerHTML = "Hello, " + userName + "!"; }
+    </script> 
+    </h1>
+    </h1>
+   </div> 
+</body> 
+        
+</html>

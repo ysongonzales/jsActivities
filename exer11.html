@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercise #1</title>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Spice&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+<div class="container">
+<h4>Age</h4>
+
+<form>
+	<input type = "textbox" value = "" id = "age"><br><br>
+    <input type = "button" onclick = "func()" value = "Submit">
+</form>
+
+<h4 id = "demo" />
+
+<script>
+
+function func() {
+	let x = document.getElementById("age").value;
+   	
+    if (x >= 0 && x <= 12) {
+    	document.getElementById("demo").innerHTML = "Child";
+    }
+    
+    else if (x >= 13 && x <= 19) {
+    	document.getElementById("demo").innerHTML = "Teenager";
+    }
+    
+    else if (x >= 20 && x <= 59) {
+    	document.getElementById("demo").innerHTML = "Adult";
+    }
+    
+    else if (x >= 60) {
+    	document.getElementById("demo").innerHTML = "Senior Citizen";
+    }
+    
+    else {
+    	document.getElementById("demo").innerHTML = "???";
+    }
+}
+
+</script>
+</div>
+</body>
+</html>

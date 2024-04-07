@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoteVerify</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Spice&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Vote Verifier</h1>
+    <form id="VotersAgeForm">
+        <label for="Age">Age:</label>
+        <input type="number" id="Anum" required>
+        <button type="button" onclick="displayAge()">Submit</button>
+    </form>
+    <h1 id="result"></h1> 
+    <script>
+        function displayAge() {
+            let AgeNumber = document.getElementById("Anum").value;
+            let Age = getAge(AgeNumber);
+            document.getElementById("result").innerText = "Age: " + Age;
+        }
+
+        function getAge(AgeNumber) {
+            if (AgeNumber < 18) {
+                return "You are  not Able to Vote";
+            } else {
+                return "You are Able to Vote";
+            }
+        }
+    </script>
+    </div>
+</body>
+</html>

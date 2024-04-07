@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #10</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Spice&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+    <h1>
+    <h1 style="font-size: 70px;"><center>Simple Calculator</center></h1>
+    <div class="calcu" style="text-align: center;" >
+        <form action="">
+            <h1>Put First Number</h1> : <input type="text" id="firstnumber" style="width: 200px; height:20px;"/> <br>
+            <h1>Put Second Number</h1> : <input type="text" id="secondnumber" style="width: 200px; height:20px;"/> <br>
+         <br>
+         <br>
+            <input type="button" onclick="addBy()" value = "Add"/> 
+            <input type="button" onclick="subBy()" value = "Subtract"/> 
+            <input type="button" onclick="multiplyBy()" value = "Multiply"/> 
+            <input type="button" onclick="divideBy()" value = "Divide"/> 
+            <input type="button" onclick="ModulusBy()" value = "Modulus"/> 
+                 
+             </form>
+             <p> The result is: <br>
+                <h1> <span id="result"></span></h1>
+             </p>
+    </div>
+    
+    <script type="text/javascript">
+        function addBy()
+        {
+            num1 = Number(document.getElementById("firstnumber").value);
+            num2 = Number(document.getElementById("secondnumber").value);
+            document.getElementById("result").innerHTML = num1 + num2;
+        }
+
+        function subBy()
+        {
+            num1 = Number(document.getElementById("firstnumber").value);
+            num2 = Number(document.getElementById("secondnumber").value);
+            document.getElementById("result").innerHTML = num1 - num2;
+        }
+
+        function multiplyBy()
+        {
+            num1 = Number(document.getElementById("firstnumber").value);
+            num2 = Number(document.getElementById("secondnumber").value);
+            document.getElementById("result").innerHTML = num1 * num2;
+        }
+
+        function divideBy()
+        {
+            num1 = Number(document.getElementById("firstnumber").value);
+            num2 = Number(document.getElementById("secondnumber").value);
+            document.getElementById("result").innerHTML = num1 / num2;
+        }
+
+        function Modulus()
+        {
+            num1 = Number(document.getElementById("firstnumber").value);
+            num2 = Number(document.getElementById("secondnumber").value);
+            document.getElementById("result").innerHTML = num1 % num2;
+        }
+        
+    </script>
+    </h1>
+    </div>
+</body> 
+</html>

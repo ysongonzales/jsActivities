@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercise #13</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h2>Smallest Integer Finder</h2>
+<h1>
+<label for="num1">Enter the first integer:</label>
+<input type="number" id="num1"> <br>
+<label for="num2">Enter the second integer:</label>
+<input type="number" id="num2"> <br>
+<label for="num3">Enter the third integer:</label>
+<input type="number" id="num3"> <br>
+<button onclick="findSmallest()">Find Smallest</button>
+</h1>
+<div id="result"></div>
+
+<script>
+function findSmallest() {
+    var num1 = document.getElementById("num1").value;
+    var num2 = document.getElementById("num2").value;
+    var num3 = document.getElementById("num3").value;
+
+    var smallest;
+
+    if (num1 <= num2 && num1 <= num3) {
+        smallest = num1;
+    } else if (num2 <= num1 && num2 <= num3) {
+        smallest = num2;
+    } else {
+        smallest = num3;
+    }
+
+    document.getElementById("result").innerHTML = "The largest integer is: " + smallest;
+}
+</script>
+</div>
+</body>
+</html>
